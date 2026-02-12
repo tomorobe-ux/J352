@@ -1,0 +1,16 @@
+body {
+  background-color:#ffffff;
+}
+h1 {color: #ff0000;}
+
+
+h2 {color: #213172}
+
+p {color: #12CB0D}
+
+.leadGraph {background-color: #000000; color: #A2250C; font-weight: bold ; font-size: 2rem;}
+
+.leadphoto {margin-right: 30px 40px 600px 40px;}
+
+a{color: #F70E0E; text-decoration: none;}
+a:hover {color: #777777; text-decoration: underline;}
