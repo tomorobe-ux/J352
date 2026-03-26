@@ -1,0 +1,46 @@
+/* VfB Stuttgart Brand Colors */
+body {
+    background-color: #ffffff; /* White */
+    color: #1a1a1a; /* Dark text for readability */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #D40723; /* Stuttgart Red */
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+    border-bottom: 8px solid #FFDC00; /* Gold/Yellow accent */
+}
+
+nav {
+    background: #333;
+    padding: 10px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #FFDC00; /* Turns yellow when you hover */
+}
+
+main {
+    padding: 20px;
+    line-height: 1.6;
+}
+
+/* Style for your 3+ photos */
+img {
+    border: 3px solid #D40723;
+    margin: 10px;
+    border-radius: 8px;
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.1);
+}
