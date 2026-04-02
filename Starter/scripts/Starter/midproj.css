@@ -1,0 +1,44 @@
+.player-hero {
+	position: relative;
+	height:	80vh; /* Takes up 80% of the screen height */
+	background: linear-gradient(to right, rgba(0, 0, 0, 0.6), transparent),
+
+	url(fooder.jpg);	
+	background-size: cover;
+	color:white;
+	display: flex;
+	flex-direction: column;
+	justify-content: center; /* centers content vertically*/
+	padding: 0 10%;
+}
+
+.player-number {
+font-size: 5rem;
+font-weight: bold;
+color: #009d7;
+display: block;
+}
+
+.player-name {
+	background-color: rgba(0, 0, 0, 1.0);
+
+  font-size: 4rem;
+  line-height: 0.9;
+  text-transform: uppercase;
+}
+
+.player-nav {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: white;
+  color: #333;
+  padding: 15px 10%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.second-plaer{
+	font-size: 12rem;
+}
