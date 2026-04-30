@@ -1,0 +1,159 @@
+:root {
+    /* Deep black for the main background */
+    --bg-color: #050505; 
+    /* Crisp off-white for body text to reduce eye strain */
+    --text-color: #e0e0e0; 
+    /* A vibrant, energetic green for accents */
+    --accent-color: #2ecc71; 
+    /* A slightly lighter gray/black for cards and sections */
+    --secondary-bg: #121212; 
+    /* Hover state green */
+    --hover-color: #27ae60;
+}
+.profile-photo {
+    width: 210px;  /* Adjust the width as needed */
+    height: 170px;   /* This keeps the image from looking squished */
+    border-radius: 4px; /* Optional: adds nice rounded corners */
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+/* Navigation */
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 10%;
+    align-items: center;
+    border-bottom: 1px solid #222;
+}
+
+nav .logo {
+    font-weight: 800;
+    letter-spacing: 1px;
+    color: var(--accent-color);
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin-left: 2.5rem;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--text-color);
+    font-weight: 500;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: var(--accent-color);
+}
+
+nav a.active {
+    color: var(--accent-color);
+    border-bottom: 2px solid var(--accent-color);
+    padding-bottom: 5px;
+}
+
+/* Layout & Hero */
+.hero, .container {
+    padding: 6rem 10%;
+}
+
+h1 {
+    font-size: 3.5rem;
+    margin-bottom: 1.5rem;
+    color: #ffffff; /* Brightest white for headlines */
+}
+
+p {
+    font-size: 1.1rem;
+    max-width: 650px;
+    margin-bottom: 2.5rem;
+    color: #b0b0b0; /* Dimmed text for descriptions */
+}
+
+.btn {
+    padding: 0.9rem 2rem;
+    background: var(--accent-color);
+    color: #000; /* Black text on green button for high contrast */
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: 600;
+    transition: background 0.3s ease;
+}
+
+.btn:hover {
+    background: var(--hover-color);
+}
+
+/* Projects Grid */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.card {
+    background: var(--secondary-bg);
+    padding: 2.5rem;
+    border-radius: 12px;
+    border: 1px solid #222;
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    border-color: var(--accent-color);
+}
+
+.card h3 {
+    margin-bottom: 1rem;
+    color: var(--accent-color);
+}
+
+/* Contact Section */
+.contact {
+    margin-top: 6rem;
+    border-top: 1px solid #222;
+    padding-top: 4rem;
+    text-align: center;
+}
+
+.email-link {
+    font-size: 2rem;
+    color: var(--accent-color);
+    text-decoration: none;
+    font-weight: 700;
+    display: inline-block;
+    margin-top: 1rem;
+}
+
+.email-link:hover {
+    text-decoration: underline;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    h1 { font-size: 2.5rem; }
+    .hero, .container { padding: 4rem 5%; }
+}
